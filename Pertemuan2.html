@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming WEB dengan HTML</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    line-height: 1.6;
+    }
+    h1 {
+    font-size: 28px;
+    }
+    h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    }
+    hr {
+    border: none;
+    border-top: 3px solid blue;
+    margin: 10px 0;
+    }
+    .menu {
+    text-align: center;
+    margin: 15px 0;
+    }
+    .menu a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: black;
+    }
+    .menu span {
+    color: brown;
+    margin: 0 5px;
+    }
+    .footer {
+    border-top: 2px solid gray;
+    margin-top: 20px;
+    padding-top: 5px;
+    font-style: italic;
+    }
+</style>
+</head>
+<body>
+
+    <div id="app"></div>
+
+<script>
+    // Ambil elemen utama
+    const app = document.getElementById("app");
+
+    // Isi konten halaman
+    const konten = `
+    <h1>Programming WEB dengan HTML</h1>
+    <h2>Teknologi Informatika</h2>
+    <hr>
+
+    <div class="menu">
+        <a href="#">Home</a> <span>|</span>
+        <a href="#">Profil</a> <span>|</span>
+        <a href="#">About</a> <span>|</span>
+        <a href="#">Gallery</a> <span>|</span>
+        <a href="#">Kontak</a>
+    </div>
+
+    <hr>
+
+    <p>
+        Terimakasih anda telah bergabung dan berkunjung pada situs kami, kami berharap anda memperoleh
+        informasi yang anda inginkan dan anda cari.
+    </p>
+
+    <p>
+        Situs ini berisi informasi sekitar materi yang berhubungan dengan programming web, diantaranya:
+        <b>HTML, CSS, PHP, MySql</b> dan materi atau artikel lain sekitar web.
+    </p>
+
+    <div class="footer">
+        Admin Web, Me
+    </div>
+    `;
+
+    // Masukkan ke halaman
+    app.innerHTML = konten;
+</script>
+
+</body>
+</html>
